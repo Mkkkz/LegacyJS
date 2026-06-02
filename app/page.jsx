@@ -10,6 +10,8 @@ import {
   CheckCircle2
 } from 'lucide-react';
 
+const discordUrl = 'https://discord.gg/bpJWJQzT7p';
+
 const services = [
   {
     icon: <Code2 />,
@@ -59,7 +61,7 @@ export default function Home() {
         <div className="links">
           <a href="#servicos">Serviços</a>
           <a href="#projetos">Projetos</a>
-          <a href="#contato">Contato</a>
+          <a href=discordUrl target="_blank" rel="noreferrer">Discord</a>
         </div>
       </nav>
 
@@ -70,8 +72,10 @@ export default function Home() {
           A LegacyJS cria plugins, bots, sites e sistemas personalizados para transformar ideias em projetos reais.
         </p>
         <div className="actions">
-          <a href="#contato">Solicitar orçamento <ArrowRight size={18} /></a>
-          <a href="#projetos" className="secondary">Ver projetos</a>
+          <a href=discordUrl target="_blank" rel="noreferrer">
+            Entrar no Discord <MessageCircle size={18} />
+          </a>
+          <a href="#projetos" className="secondary">Ver projetos <ArrowRight size={18} /></a>
         </div>
       </section>
 
@@ -132,9 +136,11 @@ export default function Home() {
         <ShieldCheck size={34} />
         <h2>Precisa de um projeto?</h2>
         <p>
-          Abra um ticket no Discord da LegacyJS ou envie uma mensagem privada para solicitar um orçamento.
+          Entre no Discord da LegacyJS, abra um ticket e solicite seu orçamento.
         </p>
-        <a href="#" className="discord"><MessageCircle size={18} /> Entrar em contato</a>
+        <a href=discordUrl target="_blank" rel="noreferrer" className="discord">
+          <MessageCircle size={18} /> Entrar no Discord
+        </a>
       </section>
 
       <footer>

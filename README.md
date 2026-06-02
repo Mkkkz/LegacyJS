@@ -2,6 +2,9 @@
 
 Site de portfólio simples em Next.js para Vercel.
 
+Discord configurado:
+https://discord.gg/bpJWJQzT7p
+
 ## Rodar localmente
 
 ```bash
