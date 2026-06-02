@@ -61,7 +61,7 @@ export default function Home() {
         <div className="links">
           <a href="#servicos">Serviços</a>
           <a href="#projetos">Projetos</a>
-          <a href=discordUrl target="_blank" rel="noreferrer">Discord</a>
+          <a href={discordUrl} target="_blank" rel="noreferrer">Discord</a>
         </div>
       </nav>
 
@@ -72,7 +72,7 @@ export default function Home() {
           A LegacyJS cria plugins, bots, sites e sistemas personalizados para transformar ideias em projetos reais.
         </p>
         <div className="actions">
-          <a href=discordUrl target="_blank" rel="noreferrer">
+          <a href={discordUrl} target="_blank" rel="noreferrer">
             Entrar no Discord <MessageCircle size={18} />
           </a>
           <a href="#projetos" className="secondary">Ver projetos <ArrowRight size={18} /></a>
