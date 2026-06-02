@@ -138,7 +138,7 @@ export default function Home() {
         <p>
           Entre no Discord da LegacyJS, abra um ticket e solicite seu orçamento.
         </p>
-        <a href=discordUrl target="_blank" rel="noreferrer" className="discord">
+        <a href={discordUrl} target="_blank" rel="noreferrer" className="discord">
           <MessageCircle size={18} /> Entrar no Discord
         </a>
       </section>
