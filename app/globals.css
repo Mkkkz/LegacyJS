@@ -258,3 +258,62 @@ footer {
     letter-spacing: -2px;
   }
 }
+
+
+.partners {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.partnerCard {
+  background: linear-gradient(145deg, rgba(124, 58, 237, .12), rgba(255,255,255,.055));
+  border: 1px solid rgba(167, 139, 250, .18);
+  border-radius: 24px;
+  padding: 28px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.partnerCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(167, 139, 250, .45);
+  background: linear-gradient(145deg, rgba(124, 58, 237, .20), rgba(255,255,255,.075));
+}
+
+.partnerCard span {
+  color: #c4b5fd;
+  background: rgba(124, 58, 237, .16);
+  border: 1px solid rgba(167, 139, 250, .2);
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.partnerCard h3 {
+  font-size: 28px;
+  margin: 20px 0 10px;
+}
+
+.partnerCard p {
+  color: #c8c8d8;
+  line-height: 1.6;
+}
+
+.partnerCard strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d8b4fe;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .partners {
+    grid-template-columns: 1fr;
+  }
+}

@@ -7,7 +7,8 @@ import {
   Server,
   MessageCircle,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  ExternalLink
 } from 'lucide-react';
 
 const discordUrl = 'https://discord.gg/bpJWJQzT7p';
@@ -53,6 +54,21 @@ const projects = [
   }
 ];
 
+const partners = [
+  {
+    title: 'Eclipse Shop',
+    tag: 'Servidor Minecraft',
+    desc: 'Site parceiro desenvolvido para loja/vitrine do servidor Eclipse Craft.',
+    url: 'https://eclipseshop.vercel.app'
+  },
+  {
+    title: 'Salão da Jana',
+    tag: 'Site Comercial',
+    desc: 'Site profissional com apresentação, serviços, WhatsApp e painel administrativo.',
+    url: 'https://salaodajana.vercel.app'
+  }
+];
+
 export default function Home() {
   return (
     <main>
@@ -61,6 +77,7 @@ export default function Home() {
         <div className="links">
           <a href="#servicos">Serviços</a>
           <a href="#projetos">Projetos</a>
+          <a href="#parceiros">Parceiros</a>
           <a href={discordUrl} target="_blank" rel="noreferrer">Discord</a>
         </div>
       </nav>
@@ -116,6 +133,24 @@ export default function Home() {
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="parceiros" className="section">
+        <h2>Sites parceiros</h2>
+        <p className="sectionText">
+          Projetos e parceiros que fazem parte da trajetória da LegacyJS.
+        </p>
+
+        <div className="partners">
+          {partners.map((partner) => (
+            <a className="partnerCard" href={partner.url} target="_blank" rel="noreferrer" key={partner.title}>
+              <span>{partner.tag}</span>
+              <h3>{partner.title}</h3>
+              <p>{partner.desc}</p>
+              <strong>Visitar site <ExternalLink size={16} /></strong>
+            </a>
           ))}
         </div>
       </section>
