@@ -1,0 +1,1 @@
+export default function Header({tag,title,desc}){return <section className="header"><span>{tag}</span><h1>{title}</h1><p>{desc}</p></section>}

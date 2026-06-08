@@ -1,0 +1,1 @@
+import Shell from '../../components/Shell';import Header from '../../components/Header';import AdminPanel from '../../components/AdminPanel';export default function Page(){return <Shell active="admin"><Header tag="Admin" title="Painel administrativo LegacyJS" desc="Controle pedidos, clientes, planos, serviços e tickets."/><AdminPanel/></Shell>}
