@@ -11,7 +11,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 
-const discordUrl = 'https://discord.gg/bpJWJQzT7p';
+const discordUrl = 'https://discord.gg/qpRShMM929';
 
 const services = [
   {
