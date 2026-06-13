@@ -1,1 +1,0 @@
-import Shell from '../../components/Shell';import Header from '../../components/Header';import Quote from '../../components/Quote';export default function Page(){return <Shell active="orcamento"><Header tag="Orçamento" title="Configure seu projeto" desc="Escolha um plano, marque os extras e envie a ideia para análise."/><Quote/></Shell>}
