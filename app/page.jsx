@@ -10,7 +10,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 
-const discordUrl = 'https://discord.gg/bpJWJQzT7p';
+const discordUrl = 'https://discord.gg/JENzHEVWRt';
 
 const services = [
   {
